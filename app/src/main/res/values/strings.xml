@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">learn kotlin</string>
+    <string name="dick_roll"> to Dick Roll </string>
+    <string name="linear_layout"> to LinearLayout </string>
+    <string name="fragment"> to Fragment </string>
+
+    <string name="click_to_roll"> click to roll </string>
+    <string name="click_to_fill"> click to fill </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next_page">next page</string>
+    <string name="game_over">game over</string>
+    <string name="game_won">game won</string>
+    <string name="to_about_fragment">to about fragment</string>
+    <string name="share">share</string>
+    <string name="to_lifecycle">to lifecycle</string>
+    <string name="to_guessgame">to GuessGame</string>
+    <string name="play">Play</string>
+    <string name="guess_game">Guess Game</string>
+    <string name="got_it">got it</string>
+    <string name="skip">skip</string>
+    <string name="end_game">end game</string>
+    <string name="your_score">your score</string>
+    <string name="play_again">play again</string>
+    <string name="_0">0</string>
+    <string name="the_word_is">the word is</string>
+
+    <string name="quote_format">\"%s\"</string>
+    <string name="score_format">Current Score: %d</string>
+    <string name="to_trackmysleepquality">to TrackMySleepQuality</string>
+
+    <!-- App title and fragment titles -->
+    <string name="sleep_tracker_fragment">SleepTrackerFragment</string>
+    <string name="sleep_quality_fragment">SleepQualityFragment</string>
+
+    <!-- Button labels -->
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="clear">Clear</string>
+
+    <!-- contentDescription strings for quality icons -->
+    <string name="quality_0">Sleep Quality 0</string>
+    <string name="quality_1">Sleep Quality 1</string>
+    <string name="quality_2">Sleep Quality 2</string>
+    <string name="quality_3">Sleep Quality 3</string>
+    <string name="quality_4">Sleep Quality 4</string>
+    <string name="quality_5">Sleep Quality 5</string>
+
+    <!-- Output to TextView styled with a little HTML -->
+    <string name="title"><![CDATA[<h3>HERE IS YOUR SLEEP DATA</h3>]]></string>
+    <string name="start_time"><![CDATA[<b>Start:</b>]]></string>
+    <string name="end_time"><![CDATA[<b>End:</b>]]></string>
+    <string name="quality"><![CDATA[<b>Quality:</b>]]></string>
+    <string name="hours_slept"><![CDATA[<b>Hours:Minutes:Seconds</b>]]></string>
+
+    <!-- Sleep quality strings -->
+    <string name="how_was_hour_sleep">How was your sleep?</string>
+    <string name="zero_very_bad">Very bad</string>
+    <string name="one_poor">Poor</string>
+    <string name="two_soso">So-so</string>
+    <string name="three_ok">OK</string>
+    <string name="four_pretty_good">Pretty good</string>
+    <string name="five_excellent">Excellent!</string>
+
+    <!-- Toast to play after Clear button has been pressed -->
+    <string name="cleared_message">All your data is gone forever.</string>
+    <string name="about_fragment">about fragment</string>
+
+
+    <string name="minutes_length">%d minutes start on %s</string>
+    <string name="hours_length">%d hours start on %s</string>
+    <string name="seconds_length">%d seconds start on %s</string>
+
+    <string name="close">Close</string>
+    <string name="sleep_results">Sleep Results</string>
+    <string name="to_getonlinedata">to GetOnlineData</string>
+
+    <string name="show_all">Show all</string>
+    <string name="show_rent">Rent</string>
+    <string name="show_buy">Buy</string>
+    <string name="type_rent">Rent</string>
+    <string name="type_sale">Sale</string>
+    <string name="display_type">For %s</string>
+    <string name="display_price_monthly_rental">$%,.0f/month</string>
+    <string name="display_price">$%,.0f</string>
+</resources>

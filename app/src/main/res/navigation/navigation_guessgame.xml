@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_guessgame"
+    app:startDestination="@id/guessTitleFragment">
+
+    <fragment
+        android:id="@+id/guessGameFragment"
+        android:name="com.example.class1.fragment.guessgames.GuessGameFragment"
+        tools:layout="@layout/fragment_guess_game"
+        android:label="fragment_guess_game">
+        <action
+            android:id="@+id/action_guessGameFragment_to_guessScoreFragment"
+            app:destination="@id/guessScoreFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/guessScoreFragment"
+        android:name="com.example.class1.fragment.guessgames.GuessScoreFragment"
+        tools:layout="@layout/fragment_guess_score"
+        android:label="fragment_guess_score">
+        <action
+            android:id="@+id/action_guessScoreFragment_to_guessGameFragment2"
+            app:destination="@id/guessGameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+        <argument
+            android:name="score"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/guessTitleFragment"
+        android:name="com.example.class1.fragment.guessgames.GuessTitleFragment"
+        android:label="GuessTitleFragment">
+        <action
+            android:id="@+id/action_guessTitleFragment_to_guessGameFragment"
+            app:destination="@id/guessGameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+</navigation>

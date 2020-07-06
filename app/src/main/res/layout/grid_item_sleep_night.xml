@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="sleep"
+            type="com.example.class1.database.trackmysleep.entity.SleepNight" />
+        <variable
+            name="listener"
+            type="com.example.class1.recyclerview.sleeptrack.SleepNightListener" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:padding="5dp"
+        android:onClick="@{() -> listener.onClick(sleep)}">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wrap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:backgroundColor="@{sleep}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/quality_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:sleepImage="@{sleep}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/ic_sleep_5" />
+
+            <TextView
+                android:id="@+id/quality_string"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white_text_color"
+                android:lines="2"
+                android:gravity="center"
+                app:sleepQualityString="@{sleep}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/quality_image"
+                tools:text="Excellent!!!" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
