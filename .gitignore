@@ -7,6 +7,6 @@
 .externalNativeBuild
 .cxx
 /build.gradle
-/app/release
-/app/mapping.txt
+app/release
+app/mapping.txt
 .idea

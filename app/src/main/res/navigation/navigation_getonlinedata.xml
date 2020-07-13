@@ -13,12 +13,15 @@
         <action
             android:id="@+id/action_overviewFragment_to_detailFragment"
             app:destination="@id/detailFragment"
-            app:popUpTo="@id/overviewFragment"
-            app:popUpToInclusive="true" />
+            app:popUpTo="@id/overviewFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.example.class1.fragment.getonlinedata.DetailFragment"
         android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="selectedProperty"
+            app:argType="com.example.class1.network.MarsProperty" />
+    </fragment>
 </navigation>

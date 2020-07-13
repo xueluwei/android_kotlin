@@ -2,11 +2,17 @@ package com.example.class1.fragment.getonlinedata
 
 import android.os.Bundle
 import android.view.*
+import android.widget.GridView
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.fragment.findNavController
 import com.example.class1.R
 import com.example.class1.databinding.FragmentOverviewBinding
+import com.example.class1.network.MarsApiFilter
+import com.example.class1.recyclerview.onlineData.OnClickListener
+import com.example.class1.recyclerview.onlineData.PhotoGridAdapter
 import com.example.class1.viewmodel.onlinedata.OverviewViewModel
 
 /**
@@ -25,6 +31,16 @@ class OverviewFragment : Fragment() {
         binding.setLifecycleOwner(this)
         // Giving the binding access to the OverviewViewModel
         binding.viewModel = viewModel
+        binding.photosGrid.adapter = PhotoGridAdapter(OnClickListener {
+            viewModel.displayPropertyDetails(it)
+        })
+
+        viewModel.navigateToSelectedProperty.observe(viewLifecycleOwner, Observer {
+            if(null != it){
+                this.findNavController().navigate(OverviewFragmentDirections.actionOverviewFragmentToDetailFragment(it))
+                viewModel.displayPropertyDetailsComplete()
+            }
+        })
 
         setHasOptionsMenu(true)
 
@@ -39,4 +55,14 @@ class OverviewFragment : Fragment() {
         super.onCreateOptionsMenu(menu, inflater)
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        viewModel.updateFilter(
+                when(item.itemId){
+                    R.id.show_rent_menu -> MarsApiFilter.SHOW_RENT
+                    R.id.show_buy_menu -> MarsApiFilter.SHOW_BUY
+                    else -> MarsApiFilter.SHOW_ALL
+                }
+        )
+        return super.onOptionsItemSelected(item)
+    }
 }

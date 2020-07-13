@@ -31,6 +31,24 @@ android {
     dataBinding {
         enabled = true
     }
+
+    //flavor
+    flavorDimensions "icecream"
+    productFlavors {
+        strawberry {
+            dimension "icecream"
+            applicationIdSuffix ".strawberry"
+        }
+        chocolate {
+            dimension "icecream"
+            applicationIdSuffix ".chocolate"
+        }
+        vanilla {
+            dimension "icecream"
+            applicationIdSuffix ".vanilla"
+        }
+    }
+
 }
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
