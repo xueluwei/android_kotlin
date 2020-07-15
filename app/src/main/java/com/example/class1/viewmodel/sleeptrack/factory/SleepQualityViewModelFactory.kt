@@ -1,9 +1,9 @@
-package com.example.class1.viewmodel.sleeptrack.factory
+package com.example.xlwapp.viewmodel.sleeptrack.factory
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.class1.database.trackmysleep.dao.SleepDatabaseDao
-import com.example.class1.viewmodel.sleeptrack.SleepQualityViewModel
+import com.example.xlwapp.database.trackmysleep.dao.SleepDatabaseDao
+import com.example.xlwapp.viewmodel.sleeptrack.SleepQualityViewModel
 
 class SleepQualityViewModelFactory(
     private val sleepNightKey:Long,

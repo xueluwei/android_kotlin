@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.class1.utils
+package com.example.xlwapp.utils
 
 import android.annotation.SuppressLint
 import android.content.res.Resources
@@ -25,8 +25,8 @@ import android.widget.AutoCompleteTextView
 import android.widget.TextView
 import androidx.core.text.HtmlCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.example.class1.R
-import com.example.class1.database.trackmysleep.entity.SleepNight
+import com.example.xlwapp.R
+import com.example.xlwapp.database.trackmysleep.entity.SleepNight
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.TimeUnit

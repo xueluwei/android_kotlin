@@ -1,4 +1,4 @@
-package com.example.class1.fragment.guessgames
+package com.example.xlwapp.fragment.guessgames
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,9 +10,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
-import com.example.class1.R
-import com.example.class1.databinding.FragmentGuessGameBinding
-import com.example.class1.viewmodel.guessgame.GameViewModel
+import com.example.xlwapp.R
+import com.example.xlwapp.databinding.FragmentGuessGameBinding
+import com.example.xlwapp.viewmodel.guessgame.GameViewModel
 
 /**
  * A simple [Fragment] subclass.

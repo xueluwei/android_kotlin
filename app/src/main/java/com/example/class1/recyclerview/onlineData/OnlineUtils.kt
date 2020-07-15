@@ -1,4 +1,4 @@
-package com.example.class1.recyclerview.onlineData
+package com.example.xlwapp.recyclerview.onlineData
 
 import android.annotation.SuppressLint
 import android.net.Uri
@@ -9,9 +9,9 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.example.class1.R
-import com.example.class1.network.MarsProperty
-import com.example.class1.viewmodel.onlinedata.MarsApiStatus
+import com.example.xlwapp.R
+import com.example.xlwapp.network.MarsProperty
+import com.example.xlwapp.viewmodel.onlinedata.MarsApiStatus
 
 @BindingAdapter("imageUrl")
 fun bindImage(imgView: ImageView, imgUrl: String?) {

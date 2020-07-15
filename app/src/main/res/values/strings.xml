@@ -84,4 +84,5 @@
     <string name="display_type">For %s</string>
     <string name="display_price_monthly_rental">$%,.0f/month</string>
     <string name="display_price">$%,.0f</string>
+    <string name="to_repository">to Repository</string>
 </resources>

@@ -3,7 +3,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.class1.viewmodel.sleeptrack.SleepQualityViewModel" />
+            type="com.example.xlwapp.viewmodel.sleeptrack.SleepQualityViewModel" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"

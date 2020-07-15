@@ -1,4 +1,4 @@
-package com.example.class1
+package com.example.xlwapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

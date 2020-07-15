@@ -9,7 +9,7 @@
 
         <variable
             name="property"
-            type="com.example.class1.network.MarsProperty" />
+            type="com.example.xlwapp.network.MarsProperty" />
     </data>
     <FrameLayout
         android:layout_width="match_parent"

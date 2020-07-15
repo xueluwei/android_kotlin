@@ -1,4 +1,4 @@
-package com.example.class1.recyclerview.sleeptrack
+package com.example.xlwapp.recyclerview.sleeptrack
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,9 +6,9 @@ import android.view.ViewGroup
 import android.widget.Adapter
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.class1.R
-import com.example.class1.database.trackmysleep.entity.SleepNight
-import com.example.class1.databinding.GridItemSleepNightBinding
+import com.example.xlwapp.R
+import com.example.xlwapp.database.trackmysleep.entity.SleepNight
+import com.example.xlwapp.databinding.GridItemSleepNightBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

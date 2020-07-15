@@ -1,4 +1,4 @@
-package com.example.class1.network
+package com.example.xlwapp.network
 
 class Uris {
     companion object{

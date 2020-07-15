@@ -1,12 +1,12 @@
-package com.example.class1.recyclerview.onlineData
+package com.example.xlwapp.recyclerview.onlineData
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 
 import androidx.recyclerview.widget.RecyclerView
-import com.example.class1.databinding.GridViewItemBinding
-import com.example.class1.network.MarsProperty
+import com.example.xlwapp.databinding.GridViewItemBinding
+import com.example.xlwapp.network.MarsProperty
 
 class PhotoGridAdapter(private val onClickListener: OnClickListener) : ListAdapter<MarsProperty, RecyclerView.ViewHolder>(OnlineDiffCallback()){
     private class ViewHolder constructor(val binding: GridViewItemBinding) : RecyclerView.ViewHolder(binding.root){

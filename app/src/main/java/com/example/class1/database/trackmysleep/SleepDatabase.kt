@@ -1,11 +1,11 @@
-package com.example.class1.database.trackmysleep
+package com.example.xlwapp.database.trackmysleep
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.class1.database.trackmysleep.dao.SleepDatabaseDao
-import com.example.class1.database.trackmysleep.entity.SleepNight
+import com.example.xlwapp.database.trackmysleep.dao.SleepDatabaseDao
+import com.example.xlwapp.database.trackmysleep.entity.SleepNight
 
 @Database(entities = [SleepNight::class], version = 1, exportSchema = false)
 abstract class SleepDatabase :RoomDatabase(){//抽象类原因为room提供实现方法

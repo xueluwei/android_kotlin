@@ -1,13 +1,12 @@
-package com.example.class1.viewmodel.onlinedata
+package com.example.xlwapp.viewmodel.onlinedata
 
 import android.app.Application
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
-import com.example.class1.R
-import com.example.class1.network.MarsProperty
+import com.example.xlwapp.R
+import com.example.xlwapp.network.MarsProperty
 
 class DetailViewModel(
         private val marsProperty: MarsProperty,

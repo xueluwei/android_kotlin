@@ -1,4 +1,4 @@
-package com.example.class1.database.trackmysleep.entity
+package com.example.xlwapp.database.trackmysleep.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

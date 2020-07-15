@@ -1,4 +1,4 @@
-package com.example.class1
+package com.example.xlwapp
 
 import android.content.Intent
 import android.os.Bundle
@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         button5.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, GuessGameActivity::class.java)) })
         button6.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, TrackMySleepQualityActivity::class.java)) })
         button7.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, GetOnlineDataActivity::class.java)) })
+        button8.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, DevByteActivity::class.java)) })
 
     }
 

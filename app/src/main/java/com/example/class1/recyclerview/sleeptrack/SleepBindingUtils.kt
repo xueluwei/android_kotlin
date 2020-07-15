@@ -1,4 +1,4 @@
-package com.example.class1.recyclerview.sleeptrack
+package com.example.xlwapp.recyclerview.sleeptrack
 
 import android.annotation.SuppressLint
 import android.graphics.Color
@@ -7,10 +7,10 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.DiffUtil
-import com.example.class1.R
-import com.example.class1.database.trackmysleep.entity.SleepNight
-import com.example.class1.utils.convertDurationToFormatted
-import com.example.class1.utils.convertNumericQualityToString
+import com.example.xlwapp.R
+import com.example.xlwapp.database.trackmysleep.entity.SleepNight
+import com.example.xlwapp.utils.convertDurationToFormatted
+import com.example.xlwapp.utils.convertNumericQualityToString
 
 
 @BindingAdapter("sleepDurationFormatted")

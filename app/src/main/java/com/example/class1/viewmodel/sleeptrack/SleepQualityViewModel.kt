@@ -1,10 +1,10 @@
-package com.example.class1.viewmodel.sleeptrack
+package com.example.xlwapp.viewmodel.sleeptrack
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.class1.database.trackmysleep.dao.SleepDatabaseDao
-import com.example.class1.database.trackmysleep.entity.SleepNight
+import com.example.xlwapp.database.trackmysleep.dao.SleepDatabaseDao
+import com.example.xlwapp.database.trackmysleep.entity.SleepNight
 import kotlinx.coroutines.*
 
 class SleepQualityViewModel(

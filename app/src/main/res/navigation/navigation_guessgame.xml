@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/guessGameFragment"
-        android:name="com.example.class1.fragment.guessgames.GuessGameFragment"
+        android:name="com.example.xlwapp.fragment.guessgames.GuessGameFragment"
         tools:layout="@layout/fragment_guess_game"
         android:label="fragment_guess_game">
         <action
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/guessScoreFragment"
-        android:name="com.example.class1.fragment.guessgames.GuessScoreFragment"
+        android:name="com.example.xlwapp.fragment.guessgames.GuessScoreFragment"
         tools:layout="@layout/fragment_guess_score"
         android:label="fragment_guess_score">
         <action
@@ -36,7 +36,7 @@
     </fragment>
     <fragment
         android:id="@+id/guessTitleFragment"
-        android:name="com.example.class1.fragment.guessgames.GuessTitleFragment"
+        android:name="com.example.xlwapp.fragment.guessgames.GuessTitleFragment"
         android:label="GuessTitleFragment">
         <action
             android:id="@+id/action_guessTitleFragment_to_guessGameFragment"

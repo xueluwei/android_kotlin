@@ -1,4 +1,4 @@
-package com.example.class1.network
+package com.example.xlwapp.network
 
 import android.os.Parcelable
 import com.squareup.moshi.Json

@@ -1,11 +1,11 @@
-package com.example.class1
+package com.example.xlwapp
 
 import androidx.room.Room
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.example.class1.database.trackmysleep.SleepDatabase
-import com.example.class1.database.trackmysleep.dao.SleepDatabaseDao
-import com.example.class1.database.trackmysleep.entity.SleepNight
+import com.example.xlwapp.database.trackmysleep.SleepDatabase
+import com.example.xlwapp.database.trackmysleep.dao.SleepDatabaseDao
+import com.example.xlwapp.database.trackmysleep.entity.SleepNight
 import org.junit.After
 
 import org.junit.Test
@@ -29,7 +29,7 @@ class ExampleInstrumentedTest {
 //    fun useAppContext() {
 //        // Context of the app under test.
 //        val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-//        assertEquals("com.example.class1", appContext.packageName)
+//        assertEquals("com.example.xlwapp", appContext.packageName)
 //    }
 
     private lateinit var sleepDao: SleepDatabaseDao

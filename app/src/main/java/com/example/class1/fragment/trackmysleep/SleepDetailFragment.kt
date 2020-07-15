@@ -1,4 +1,4 @@
-package com.example.class1.fragment.trackmysleep
+package com.example.xlwapp.fragment.trackmysleep
 
 import android.os.Bundle
 import android.util.Log
@@ -11,11 +11,11 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
-import com.example.class1.R
-import com.example.class1.database.trackmysleep.SleepDatabase
-import com.example.class1.databinding.FragmentSleepDetailBinding
-import com.example.class1.viewmodel.sleeptrack.SleepDetailViewModel
-import com.example.class1.viewmodel.sleeptrack.factory.SleepDetailViewModelFactory
+import com.example.xlwapp.R
+import com.example.xlwapp.database.trackmysleep.SleepDatabase
+import com.example.xlwapp.databinding.FragmentSleepDetailBinding
+import com.example.xlwapp.viewmodel.sleeptrack.SleepDetailViewModel
+import com.example.xlwapp.viewmodel.sleeptrack.factory.SleepDetailViewModelFactory
 
 /**
  * A simple [Fragment] subclass.

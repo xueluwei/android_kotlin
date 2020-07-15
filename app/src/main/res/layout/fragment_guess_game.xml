@@ -3,7 +3,7 @@
     <data>
         <variable
             name="guessGameViewModel"
-            type="com.example.class1.viewmodel.guessgame.GameViewModel" />
+            type="com.example.xlwapp.viewmodel.guessgame.GameViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

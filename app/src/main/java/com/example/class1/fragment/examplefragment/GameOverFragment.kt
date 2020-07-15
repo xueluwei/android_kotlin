@@ -1,4 +1,4 @@
-package com.example.class1.fragment.examplefragment
+package com.example.xlwapp.fragment.examplefragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
-import com.example.class1.R
-import com.example.class1.databinding.FragmentGameOverBinding
+import com.example.xlwapp.R
+import com.example.xlwapp.databinding.FragmentGameOverBinding
 
 class GameOverFragment : Fragment() {
 

@@ -1,8 +1,8 @@
-package com.example.class1.viewmodel.guessgame.Factory
+package com.example.xlwapp.viewmodel.guessgame.Factory
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.class1.viewmodel.guessgame.GameScoreViewModel
+import com.example.xlwapp.viewmodel.guessgame.GameScoreViewModel
 
 class GameScoreViewModelFactory(private val finalScore: Int):ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {

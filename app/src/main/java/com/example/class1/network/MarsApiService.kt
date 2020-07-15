@@ -1,4 +1,4 @@
-package com.example.class1.network
+package com.example.xlwapp.network
 
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.squareup.moshi.Moshi

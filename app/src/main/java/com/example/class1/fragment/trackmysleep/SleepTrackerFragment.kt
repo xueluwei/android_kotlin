@@ -1,4 +1,4 @@
-package com.example.class1.fragment.trackmysleep
+package com.example.xlwapp.fragment.trackmysleep
 
 import android.os.Bundle
 import android.util.Log
@@ -16,14 +16,14 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.class1.R
-import com.example.class1.database.trackmysleep.SleepDatabase
-import com.example.class1.databinding.FragmentSleepTrackerBinding
-import com.example.class1.recyclerview.sleeptrack.SleepNightAdapter
-import com.example.class1.recyclerview.sleeptrack.SleepNightGridAdapter
-import com.example.class1.recyclerview.sleeptrack.SleepNightListener
-import com.example.class1.viewmodel.sleeptrack.SleepTrackerViewModel
-import com.example.class1.viewmodel.sleeptrack.factory.SleepTrackerViewModelFactory
+import com.example.xlwapp.R
+import com.example.xlwapp.database.trackmysleep.SleepDatabase
+import com.example.xlwapp.databinding.FragmentSleepTrackerBinding
+import com.example.xlwapp.recyclerview.sleeptrack.SleepNightAdapter
+import com.example.xlwapp.recyclerview.sleeptrack.SleepNightGridAdapter
+import com.example.xlwapp.recyclerview.sleeptrack.SleepNightListener
+import com.example.xlwapp.viewmodel.sleeptrack.SleepTrackerViewModel
+import com.example.xlwapp.viewmodel.sleeptrack.factory.SleepTrackerViewModelFactory
 import com.google.android.material.snackbar.Snackbar
 
 /**

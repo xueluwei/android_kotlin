@@ -1,3 +1,2 @@
-rootProject.name='class1'
+rootProject.name='xlwapp'
 include ':app'
-include ':lib'

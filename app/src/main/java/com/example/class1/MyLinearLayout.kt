@@ -1,10 +1,10 @@
-package com.example.class1
+package com.example.xlwapp
 
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.example.class1.databinding.MyLinearLayoutBinding
+import com.example.xlwapp.databinding.MyLinearLayoutBinding
 //简单实现 LinearLayout  、  bindingView 和 LiveData
 class MyLinearLayout : AppCompatActivity() {
 

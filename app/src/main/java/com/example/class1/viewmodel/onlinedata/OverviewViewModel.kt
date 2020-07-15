@@ -1,11 +1,11 @@
-package com.example.class1.viewmodel.onlinedata
+package com.example.xlwapp.viewmodel.onlinedata
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.class1.network.MarsApi
-import com.example.class1.network.MarsApiFilter
-import com.example.class1.network.MarsProperty
+import com.example.xlwapp.network.MarsApi
+import com.example.xlwapp.network.MarsApiFilter
+import com.example.xlwapp.network.MarsProperty
 import kotlinx.coroutines.*
 import java.lang.Exception
 

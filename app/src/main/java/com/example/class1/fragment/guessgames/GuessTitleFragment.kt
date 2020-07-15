@@ -1,4 +1,4 @@
-package com.example.class1.fragment.guessgames
+package com.example.xlwapp.fragment.guessgames
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
-import com.example.class1.R
-import com.example.class1.databinding.FragmentGuessGameBinding
-import com.example.class1.databinding.FragmentGuessTitleBinding
-import com.example.class1.databinding.FragmentTitleBinding
+import com.example.xlwapp.R
+import com.example.xlwapp.databinding.FragmentGuessGameBinding
+import com.example.xlwapp.databinding.FragmentGuessTitleBinding
+import com.example.xlwapp.databinding.FragmentTitleBinding
 import kotlinx.android.synthetic.main.fragment_guess_score.*
 
 class GuessTitleFragment : Fragment() {

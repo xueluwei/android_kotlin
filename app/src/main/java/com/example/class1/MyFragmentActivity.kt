@@ -1,4 +1,4 @@
-package com.example.class1
+package com.example.xlwapp
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
-import com.example.class1.databinding.MyFragmentActivityBinding
+import com.example.xlwapp.databinding.MyFragmentActivityBinding
 
 //实现了 Fragment 各种跳转，Menu跳转
 // drawerLayout 拖拽的 menu (item里id如果和navigation里的fragment的id相同的话不用写onclick，点击自动跳转)

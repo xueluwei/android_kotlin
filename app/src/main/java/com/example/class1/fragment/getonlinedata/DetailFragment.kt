@@ -1,4 +1,4 @@
-package com.example.class1.fragment.getonlinedata
+package com.example.xlwapp.fragment.getonlinedata
 
 import android.os.Bundle
 import android.util.Log
@@ -8,10 +8,10 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
-import com.example.class1.R
-import com.example.class1.databinding.FragmentDetailBinding
-import com.example.class1.viewmodel.onlinedata.DetailViewModel
-import com.example.class1.viewmodel.onlinedata.factory.DetailViewModelFactory
+import com.example.xlwapp.R
+import com.example.xlwapp.databinding.FragmentDetailBinding
+import com.example.xlwapp.viewmodel.onlinedata.DetailViewModel
+import com.example.xlwapp.viewmodel.onlinedata.factory.DetailViewModelFactory
 
 /**
  * A simple [Fragment] subclass.

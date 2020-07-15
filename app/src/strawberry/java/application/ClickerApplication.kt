@@ -1,4 +1,4 @@
-package com.example.class1.application
+package com.example.xlwapp.application
 
 import android.app.Application
 import androidx.multidex.MultiDexApplication

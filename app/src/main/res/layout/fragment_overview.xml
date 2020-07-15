@@ -8,7 +8,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.class1.viewmodel.onlinedata.OverviewViewModel" />
+            type="com.example.xlwapp.viewmodel.onlinedata.OverviewViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

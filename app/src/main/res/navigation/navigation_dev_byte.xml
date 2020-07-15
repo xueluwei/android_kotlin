@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_dev_byte"
+    app:startDestination="@id/devByteFragment">
+
+    <fragment
+        android:id="@+id/devByteFragment"
+        android:name="com.example.xlwapp.fragment.devbyte.DevByteFragment"
+        android:label="fragment_dev_byte"
+        tools:layout="@layout/fragment_dev_byte" />
+</navigation>

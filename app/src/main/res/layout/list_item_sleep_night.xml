@@ -3,7 +3,7 @@
     <data>
         <variable
             name="sleep"
-            type="com.example.class1.database.trackmysleep.entity.SleepNight" />
+            type="com.example.xlwapp.database.trackmysleep.entity.SleepNight" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"

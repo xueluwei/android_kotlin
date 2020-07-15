@@ -1,8 +1,8 @@
-package com.example.class1.database.trackmysleep.dao
+package com.example.xlwapp.database.trackmysleep.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.class1.database.trackmysleep.entity.SleepNight
+import com.example.xlwapp.database.trackmysleep.entity.SleepNight
 
 @Dao
 interface SleepDatabaseDao{

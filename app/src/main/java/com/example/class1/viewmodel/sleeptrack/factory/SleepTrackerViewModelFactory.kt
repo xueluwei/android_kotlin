@@ -1,10 +1,10 @@
-package com.example.class1.viewmodel.sleeptrack.factory
+package com.example.xlwapp.viewmodel.sleeptrack.factory
 
 import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.class1.database.trackmysleep.dao.SleepDatabaseDao
-import com.example.class1.viewmodel.sleeptrack.SleepTrackerViewModel
+import com.example.xlwapp.database.trackmysleep.dao.SleepDatabaseDao
+import com.example.xlwapp.viewmodel.sleeptrack.SleepTrackerViewModel
 import java.lang.IllegalArgumentException
 
 class SleepTrackerViewModelFactory(

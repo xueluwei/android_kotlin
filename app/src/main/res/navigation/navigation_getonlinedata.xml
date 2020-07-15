@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/overviewFragment"
-        android:name="com.example.class1.fragment.getonlinedata.OverviewFragment"
+        android:name="com.example.xlwapp.fragment.getonlinedata.OverviewFragment"
         android:label="fragment_overview"
         tools:layout="@layout/fragment_overview" >
         <action
@@ -17,11 +17,11 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.example.class1.fragment.getonlinedata.DetailFragment"
+        android:name="com.example.xlwapp.fragment.getonlinedata.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" >
         <argument
             android:name="selectedProperty"
-            app:argType="com.example.class1.network.MarsProperty" />
+            app:argType="com.example.xlwapp.network.MarsProperty" />
     </fragment>
 </navigation>

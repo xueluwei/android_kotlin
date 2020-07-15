@@ -1,4 +1,4 @@
-package com.example.class1.viewmodel.guessgame
+package com.example.xlwapp.viewmodel.guessgame
 
 import android.os.CountDownTimer
 import android.text.format.DateUtils

@@ -4,7 +4,7 @@
     <data>
         <variable
             name="myname"
-            type="com.example.class1.MyLinearLayout.My" />
+            type="com.example.xlwapp.MyLinearLayout.My" />
     </data>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"

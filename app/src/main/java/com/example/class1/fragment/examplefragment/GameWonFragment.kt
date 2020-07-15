@@ -1,4 +1,4 @@
-package com.example.class1.fragment.examplefragment
+package com.example.xlwapp.fragment.examplefragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,8 +6,8 @@ import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
-import com.example.class1.R
-import com.example.class1.databinding.FragmentGameWonBinding
+import com.example.xlwapp.R
+import com.example.xlwapp.databinding.FragmentGameWonBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

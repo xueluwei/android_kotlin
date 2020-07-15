@@ -1,19 +1,18 @@
-package com.example.class1.fragment.getonlinedata
+package com.example.xlwapp.fragment.getonlinedata
 
 import android.os.Bundle
 import android.view.*
-import android.widget.GridView
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
-import com.example.class1.R
-import com.example.class1.databinding.FragmentOverviewBinding
-import com.example.class1.network.MarsApiFilter
-import com.example.class1.recyclerview.onlineData.OnClickListener
-import com.example.class1.recyclerview.onlineData.PhotoGridAdapter
-import com.example.class1.viewmodel.onlinedata.OverviewViewModel
+import com.example.xlwapp.R
+import com.example.xlwapp.databinding.FragmentOverviewBinding
+import com.example.xlwapp.network.MarsApiFilter
+import com.example.xlwapp.recyclerview.onlineData.OnClickListener
+import com.example.xlwapp.recyclerview.onlineData.PhotoGridAdapter
+import com.example.xlwapp.viewmodel.onlinedata.OverviewViewModel
 
 /**
  * A simple [Fragment] subclass.
