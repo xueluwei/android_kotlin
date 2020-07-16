@@ -109,6 +109,10 @@ dependencies {
     kapt "com.squareup.moshi:moshi-kotlin-codegen:$version_moshi"
 
     implementation "com.github.bumptech.glide:glide:$version_glide"
-    kapt 'com.github.bumptech.glide:compiler:4.7.1'
+    kapt "com.github.bumptech.glide:compiler:$version_glide"
+
+    // WorkManager dependency
+    def work_version = "1.0.1"
+    implementation "android.arch.work:work-runtime-ktx:$work_version"
 
 }
