@@ -16,6 +16,7 @@
 
 package com.example.xlwapp.network.devbyte
 
+import com.example.xlwapp.database.devbyte.DatabaseVideo
 import com.squareup.moshi.JsonClass
 
 /**
@@ -53,9 +54,9 @@ data class NetworkVideo(
 /**
  * Convert Network results to database objects
  */
-fun NetworkVideoContainer.asDomainModel(): List<DevByteVideo> {
+fun NetworkVideoContainer.asDomainModel(): List<DatabaseVideo> {
     return videos.map {
-        DevByteVideo(
+        DatabaseVideo(
                 title = it.title,
                 description = it.description,
                 url = it.url,
