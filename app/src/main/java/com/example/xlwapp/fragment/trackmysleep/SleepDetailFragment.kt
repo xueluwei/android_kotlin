@@ -29,7 +29,7 @@ class SleepDetailFragment : Fragment() {
         val args = SleepDetailFragmentArgs.fromBundle(arguments!!)
         val dataSource = SleepDatabase.getInstance(activity!!.application).sleepDatabaseDao
         val viewModelFactory = SleepDetailViewModelFactory(args.sleepNightKey, dataSource)
-        val viewModel = ViewModelProviders.of(this,viewModelFactory).get(SleepDetailViewModel::class.java)
+        val viewModel = ViewModelProvider(this,viewModelFactory).get(SleepDetailViewModel::class.java)
         binding.viewModel = viewModel
 
         binding.setLifecycleOwner(this)

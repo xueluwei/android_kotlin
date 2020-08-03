@@ -17,15 +17,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:backgroundColor="@{sleep}"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/quality_image"
                 android:layout_width="@dimen/icon_size"
                 android:layout_height="60dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="@dimen/spacing_normal"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 app:sleepImage="@{sleep}"
@@ -40,7 +40,7 @@
                 android:layout_height="20dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginEnd="@dimen/spacing_normal"
                 android:textColor="@color/white_text_color"
                 app:sleepDurationFormatted="@{sleep}"
                 app:layout_constraintEnd_toEndOf="parent"

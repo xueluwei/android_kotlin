@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gdg"
+    app:startDestination="@id/gdgFragment">
+
+    <fragment
+        android:id="@+id/gdgFragment"
+        android:name="com.example.xlwapp.fragment.gdg.GdgFragment"
+        android:label=" GDG Finder"
+        tools:layout="@layout/fragment_gdg" >
+        <action
+            android:id="@+id/action_gdgFragment_to_gdgListFragment"
+            app:destination="@id/gdgListFragment" />
+        <action
+            android:id="@+id/action_gdgFragment_to_addGdgFragment"
+            app:destination="@id/addGdgFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gdgListFragment"
+        android:name="com.example.xlwapp.fragment.gdg.GdgListFragment"
+        android:label="GDG Search"
+        tools:layout="@layout/fragment_gdg_list" />
+    <fragment
+        android:id="@+id/addGdgFragment"
+        android:name="com.example.xlwapp.fragment.gdg.AddGdgFragment"
+        android:label="Apply"
+        tools:layout="@layout/fragment_add_gdg" />
+</navigation>

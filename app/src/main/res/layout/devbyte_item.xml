@@ -21,7 +21,7 @@
         app:cardCornerRadius="0dp"
         app:cardElevation="5dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="16dp">
+        android:layout_marginBottom="@dimen/spacing_normal">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -56,7 +56,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="@dimen/spacing_normal"
                 android:text="@{video.title}"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
@@ -73,7 +73,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="@dimen/spacing_normal"
                 android:text="@{video.shortDescription}"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"

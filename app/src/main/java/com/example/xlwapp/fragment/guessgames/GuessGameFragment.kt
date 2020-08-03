@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import com.example.xlwapp.R
@@ -28,7 +29,7 @@ class GuessGameFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        viewModle = ViewModelProviders.of(this).get(GameViewModel::class.java)
+        viewModle = ViewModelProvider(this).get(GameViewModel::class.java)
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_guess_game,container,false)
         binding.guessGameViewModel = viewModle
         binding.lifecycleOwner = viewLifecycleOwner

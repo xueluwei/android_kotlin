@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout">
+
+    <data>
+
+        <variable
+            name="chapter"
+            type="com.example.xlwapp.network.gdg.NewChapter" />
+
+        <variable
+            name="clickListener"
+            type="com.example.xlwapp.recyclerview.gdg.GdgClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> clickListener.onClick(chapter)}"
+        tools:context="com.example.android.gdg.gdglist.GdgListFragment">
+
+        <ImageView
+            android:id="@+id/gdg_image"
+            android:layout_width="50dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="26dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_gdg" />
+
+        <TextView
+            android:id="@+id/chapter_name"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:layout_marginEnd="@dimen/spacing_normal"
+            android:gravity="center_vertical"
+            android:text="@{chapter.title}"
+            android:textAppearance="@style/TextAppearance.Title"
+            app:layout_constraintBottom_toBottomOf="@+id/gdg_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/gdg_image"
+            app:layout_constraintTop_toTopOf="@+id/gdg_image"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="GDG Mountain View is really long so it will wrap in tools" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

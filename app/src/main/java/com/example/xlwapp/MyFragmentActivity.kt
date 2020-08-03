@@ -22,7 +22,7 @@ class MyFragmentActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         val binding = DataBindingUtil.setContentView<MyFragmentActivityBinding>(this,R.layout.my_fragment_activity)
         drawerLayout = binding.drawerLayout
-        drawerLayout.setStatusBarBackground(R.drawable.ic_nav)
+        drawerLayout.setStatusBarBackground(R.color.colorAccent)
         val navigableSet = this.findNavController(R.id.myNavHostFragment)
         NavigationUI.setupActionBarWithNavController(this,navigableSet,drawerLayout)
         NavigationUI.setupWithNavController(binding.navView, navigableSet)

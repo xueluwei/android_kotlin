@@ -2,8 +2,7 @@ package com.example.xlwapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.NavController
-import androidx.navigation.findNavController
+
 //ViewModel（用于处理saveinstance等数据保存）
 // ViewModelFactory（用于初始化ViewModel）
 // LiveData（用于ViewModel提供get访问，最好不变）

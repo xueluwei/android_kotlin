@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 import com.example.xlwapp.R
@@ -28,7 +29,7 @@ class GuessScoreFragment : Fragment() {
     ): View? {
         val args = GuessScoreFragmentArgs.fromBundle(arguments!!)
         scoreViewModelFactory = GameScoreViewModelFactory(args.score)
-        scoreViewModel = ViewModelProviders.of(this,scoreViewModelFactory).get(GameScoreViewModel::class.java)
+        scoreViewModel = ViewModelProvider(this,scoreViewModelFactory).get(GameScoreViewModel::class.java)
         val binding = DataBindingUtil.inflate<FragmentGuessScoreBinding>(inflater,R.layout.fragment_guess_score,container,false)
         binding.guessScoreViewModel = scoreViewModel
         binding.lifecycleOwner = viewLifecycleOwner

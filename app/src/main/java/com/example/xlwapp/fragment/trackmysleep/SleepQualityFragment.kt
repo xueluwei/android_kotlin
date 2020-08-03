@@ -33,7 +33,7 @@ class SleepQualityFragment : Fragment() {
 
         val binding = DataBindingUtil.inflate<FragmentSleepQualityBinding>(inflater,R.layout.fragment_sleep_quality,container,false)
         val viewModelFactory = SleepQualityViewModelFactory(arguments.sleepNightKey, dataSource)
-        val viewModel = ViewModelProviders.of(this, viewModelFactory).get(SleepQualityViewModel::class.java)
+        val viewModel = ViewModelProvider(this, viewModelFactory).get(SleepQualityViewModel::class.java)
         binding.viewModel = viewModel
 
         viewModel.navigateToSleepTracker.observe(viewLifecycleOwner, Observer {
