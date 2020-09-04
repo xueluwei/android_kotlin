@@ -1,10 +1,11 @@
-package com.example.xlwapp
+package com.example.xlwapp.activity
 
-import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.amitshekhar.DebugDB
+import com.example.xlwapp.BuildConfig
+import com.example.xlwapp.R
 
 //room数据存储
 //携程

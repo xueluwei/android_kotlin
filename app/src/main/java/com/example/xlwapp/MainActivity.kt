@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import com.example.xlwapp.activity.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 //主页
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         button7.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, GetOnlineDataActivity::class.java)) })
         button8.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, DevByteActivity::class.java)) })
         button9.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, GdgActivity::class.java)) })
+        button10.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, NotificationActivity::class.java)) })
 
     }
 

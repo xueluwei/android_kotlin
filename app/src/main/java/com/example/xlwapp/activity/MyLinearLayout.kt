@@ -1,9 +1,10 @@
-package com.example.xlwapp
+package com.example.xlwapp.activity
 
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.example.xlwapp.R
 import com.example.xlwapp.databinding.MyLinearLayoutBinding
 //简单实现 LinearLayout  、  bindingView 和 LiveData
 class MyLinearLayout : AppCompatActivity() {
@@ -23,7 +24,7 @@ class MyLinearLayout : AppCompatActivity() {
                 invalidateAll()
             }
         })
-        binding.myname = My("qwer")
+        binding.myname = My("qwe")
     }
 
     data class My(var name : String)

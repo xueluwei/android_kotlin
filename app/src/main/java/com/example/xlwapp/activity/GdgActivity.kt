@@ -1,15 +1,7 @@
-package com.example.xlwapp
+package com.example.xlwapp.activity
 
-import android.graphics.Bitmap
-import android.graphics.drawable.ShapeDrawable
-import android.graphics.drawable.shapes.OvalShape
-import android.net.wifi.aware.AttachCallback
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.*
-import android.widget.ImageView
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.NavDestination
 import androidx.navigation.findNavController
@@ -17,15 +9,12 @@ import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.NavigationUI.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.xlwapp.R
 import com.example.xlwapp.databinding.ActivityGdgBinding
-import com.example.xlwapp.network.gdg.NewGdgApi
-import com.google.android.material.internal.NavigationMenuItemView
-import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_gdg.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.launch
 
 //设计相关
 class GdgActivity : AppCompatActivity() {

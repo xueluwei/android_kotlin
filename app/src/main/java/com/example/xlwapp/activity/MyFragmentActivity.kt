@@ -1,4 +1,4 @@
-package com.example.xlwapp
+package com.example.xlwapp.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
+import com.example.xlwapp.R
 import com.example.xlwapp.databinding.MyFragmentActivityBinding
 
 //实现了 Fragment 各种跳转，Menu跳转
@@ -20,7 +21,7 @@ class MyFragmentActivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = DataBindingUtil.setContentView<MyFragmentActivityBinding>(this,R.layout.my_fragment_activity)
+        val binding = DataBindingUtil.setContentView<MyFragmentActivityBinding>(this, R.layout.my_fragment_activity)
         drawerLayout = binding.drawerLayout
         drawerLayout.setStatusBarBackground(R.color.colorAccent)
         val navigableSet = this.findNavController(R.id.myNavHostFragment)

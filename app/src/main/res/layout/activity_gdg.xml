@@ -7,7 +7,7 @@
         android:id="@+id/drawerLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".GdgActivity">
+        tools:context=".activity.GdgActivity">
 
         <fragment
             android:id="@+id/gdgFragment"

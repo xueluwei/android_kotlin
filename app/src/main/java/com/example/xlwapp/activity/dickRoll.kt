@@ -1,8 +1,9 @@
-package com.example.xlwapp
+package com.example.xlwapp.activity
 
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.example.xlwapp.R
 import kotlinx.android.synthetic.main.dice.*
 //简单的初始设置，button用法
 class dickRoll : AppCompatActivity() {
@@ -19,7 +20,7 @@ class dickRoll : AppCompatActivity() {
             3-> R.drawable.dice_3
             4-> R.drawable.dice_4
             5-> R.drawable.dice_5
-            else ->  R.drawable.dice_6
+            else -> R.drawable.dice_6
         }
         return res
     }

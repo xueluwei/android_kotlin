@@ -23,19 +23,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GuessGameActivity" />
-        <activity android:name=".LifecycleAndLogActivity" />
-        <activity android:name=".dickRoll" />
-        <activity android:name=".MyLinearLayout" />
-        <activity android:name=".MyFragmentActivity" />
-        <activity android:name=".TrackMySleepQualityActivity" />
-        <activity android:name=".GetOnlineDataActivity" />
-        <activity android:name=".DevByteActivity" />
-        <activity android:name=".GdgActivity" />
+        <activity android:name=".activity.GuessGameActivity" />
+        <activity android:name=".activity.LifecycleAndLogActivity" />
+        <activity android:name=".activity.dickRoll" />
+        <activity android:name=".activity.MyLinearLayout" />
+        <activity android:name=".activity.MyFragmentActivity" />
+        <activity android:name=".activity.TrackMySleepQualityActivity" />
+        <activity android:name=".activity.GetOnlineDataActivity" />
+        <activity android:name=".activity.DevByteActivity" />
+        <activity android:name=".activity.GdgActivity" />
+        <activity android:name=".activity.NotificationActivity"/>
 
+        <!--   use for download online fonts     -->
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <!--   receiver     -->
+        <receiver
+            android:name=".receiver.AlarmReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+        <receiver
+            android:name=".receiver.SnoozeReceiver"
+            android:enabled="true"
+            android:exported="false"/>
 
     </application>
 

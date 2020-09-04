@@ -1,7 +1,8 @@
-package com.example.xlwapp
+package com.example.xlwapp.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.xlwapp.R
 
 //缓存网络上的信息到本地 repository
 class DevByteActivity : AppCompatActivity() {

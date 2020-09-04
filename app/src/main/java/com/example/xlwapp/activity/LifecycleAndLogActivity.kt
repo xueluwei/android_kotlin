@@ -1,8 +1,9 @@
-package com.example.xlwapp
+package com.example.xlwapp.activity
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.xlwapp.R
 import timber.log.Timber
 
 //timber打log可以不必用TAG直接输出message,需要在application初始化

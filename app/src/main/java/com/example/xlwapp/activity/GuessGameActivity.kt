@@ -1,7 +1,8 @@
-package com.example.xlwapp
+package com.example.xlwapp.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.xlwapp.R
 
 //ViewModel（用于处理saveinstance等数据保存）
 // ViewModelFactory（用于初始化ViewModel）
