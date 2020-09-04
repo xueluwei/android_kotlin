@@ -1,10 +1,8 @@
 package com.example.xlwapp.work.devbyte
 
 import android.content.Context
-import android.util.Log
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import com.amitshekhar.utils.Utils.getDatabase
 import com.example.xlwapp.database.devbyte.DevByteDataBase
 import com.example.xlwapp.repository.devbyte.VideosRepository
 import retrofit2.HttpException
