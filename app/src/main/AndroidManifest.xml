@@ -39,6 +39,17 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
+        <!-- [fcm(firebase_cloud_message)_default_setting] -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/common_google_signin_btn_icon_dark"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/breakfast_notification_channel_id" />
+
         <!--   receiver     -->
         <receiver
             android:name=".receiver.AlarmReceiver"
@@ -48,6 +59,13 @@
             android:name=".receiver.SnoozeReceiver"
             android:enabled="true"
             android:exported="false"/>
+        <service
+            android:name=".receiver.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
 
     </application>
 
