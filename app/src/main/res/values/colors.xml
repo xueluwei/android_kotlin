@@ -12,4 +12,7 @@
     <color name="text_black">#ff222222</color>
 
     <color name="transparency">#00ffffff</color>
+
+    <color name="colorBackground">#FFFF5500</color>
+    <color name="colorPaint">#FFFFEB3B</color>
 </resources>

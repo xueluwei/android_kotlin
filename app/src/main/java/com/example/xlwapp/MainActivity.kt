@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         button8.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, DevByteActivity::class.java)) })
         button9.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, GdgActivity::class.java)) })
         button10.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, NotificationActivity::class.java)) })
-
+        button11.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, CustomViewActivity::class.java)) })
     }
 
     private fun setDarkMode() {

@@ -145,4 +145,29 @@
     <string name="breakfast_notification_channel_description">Breakfast reminder</string>
     <string name="snooze">Snooze</string>
     <string name="egg_timer">egg timer</string>
+
+    <string name="custom_view">custom view</string>
+    <string name="fan_off">off</string>
+    <string name="fan_low">1</string>
+    <string name="fan_medium">2</string>
+    <string name="fan_high">3</string>
+    <string name="change">Change</string>
+    <string name="reset">Reset</string>
+    <string name="to_mini_paint">to mini paint</string>
+    <string name="canvasContentDescription">Mini Paint is a simple line drawing app.
+   Drag your fingers to draw. Rotate the phone to clear.</string>
+    <string name="to_clipping_example">to clipping example</string>
+    <string name="clipping">Clipping</string>
+    <string name="translated">translated text</string>
+    <string name="skewed">"Skewed and "</string>
+    <string name="instructions_title">
+    <b>How to play:</b>
+    </string>
+    <string name="instructions">
+       \t \u2022 Find the Android hidden behind the dark surface. \n
+       \t \u2022 Touch and hold the screen for the spotlight. \n
+       \t \u2022 Once you find the Android, lift your finger to end the game. \n \n
+       \t \u2022 To restart the game touch the screen again.
+   </string>
+    <string name="to_spotlight">to spotlight</string>
 </resources>

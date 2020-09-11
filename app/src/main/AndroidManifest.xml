@@ -3,10 +3,7 @@
     package="com.example.xlwapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
-    <!-- To access the location we need to ask for permission -->
-    <!-- see https://developer.android.com/training/location/retrieve-current.html -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:name=".application.Application"
@@ -32,41 +29,43 @@
         <activity android:name=".activity.GetOnlineDataActivity" />
         <activity android:name=".activity.DevByteActivity" />
         <activity android:name=".activity.GdgActivity" />
-        <activity android:name=".activity.NotificationActivity"/>
+        <activity android:name=".activity.NotificationActivity" />
+        <activity android:name=".activity.CustomViewActivity" />
+        <activity android:name=".activity.ClippingExampleActivity" />
+        <activity android:name=".activity.SpotLightActivity" />
+        <activity
+            android:name=".activity.MiniPaintActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
-        <!--   use for download online fonts     -->
         <meta-data
             android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
-
-        <!-- [fcm(firebase_cloud_message)_default_setting] -->
+            android:resource="@array/preloaded_fonts" /> <!-- use for download online fonts -->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@drawable/common_google_signin_btn_icon_dark"/>
+            android:resource="@drawable/common_google_signin_btn_icon_dark" /> <!-- [fcm(firebase_cloud_message)_default_setting] -->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
-            android:resource="@color/colorAccent"/>
+            android:resource="@color/colorAccent" />
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="@string/breakfast_notification_channel_id" />
 
-        <!--   receiver     -->
         <receiver
             android:name=".receiver.AlarmReceiver"
             android:enabled="true"
-            android:exported="false"/>
+            android:exported="false" />
         <receiver
             android:name=".receiver.SnoozeReceiver"
             android:enabled="true"
-            android:exported="false"/>
+            android:exported="false" />
+
         <service
             android:name=".receiver.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-
     </application>
 
 </manifest>
