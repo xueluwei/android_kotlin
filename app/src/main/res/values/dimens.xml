@@ -19,4 +19,6 @@
     <dimen name="strokeWidth">4dp</dimen>
 
     <dimen name="textSize">18sp</dimen>
+
+    <dimen name="standard_margin">8dp</dimen>
 </resources>

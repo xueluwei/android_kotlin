@@ -170,4 +170,12 @@
        \t \u2022 To restart the game touch the screen again.
    </string>
     <string name="to_spotlight">to spotlight</string>
+
+    <string name="animation">animation</string>
+    <string name="rotate">Rotate</string>
+    <string name="translate">Translate</string>
+    <string name="scale">Scale</string>
+    <string name="fade">Fade</string>
+    <string name="shower">Shower</string>
+    <string name="sky_color">Sky Color</string>
 </resources>

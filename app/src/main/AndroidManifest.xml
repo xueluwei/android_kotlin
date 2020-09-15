@@ -36,6 +36,7 @@
         <activity
             android:name=".activity.MiniPaintActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".activity.AnimationActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
