@@ -4,8 +4,10 @@ import android.animation.*
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
+import android.util.AttributeSet
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.AccelerateInterpolator
 import android.view.animation.LinearInterpolator
 import android.widget.Button
@@ -16,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatImageView
 import com.example.xlwapp.R
 import java.util.*
+import java.util.jar.Attributes
 import kotlin.concurrent.fixedRateTimer
 import kotlin.concurrent.schedule
 
@@ -154,6 +157,16 @@ class AnimationActivity : AppCompatActivity() {
         mover.interpolator = AccelerateInterpolator(1f)
         val rotator = ObjectAnimator.ofFloat(newStar, View.ROTATION, (Math.random() * 1080).toFloat())
         rotator.interpolator = LinearInterpolator()
+        rotator.interpolator = object : AccelerateDecelerateInterpolator() {
+            //override to custom Interpolator
+            override fun getInterpolation(x: Float): Float {
+                if(x < 40){
+                    return x * 2
+                }else{
+                    return x / 2
+                }
+            }
+        }
         val set = AnimatorSet()
         set.playTogether(mover, rotator)
         set.duration = (Math.random() * 1500 + 500).toLong()
