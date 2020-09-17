@@ -13,6 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.Motion4Activity"></activity>
+        <activity android:name=".activity.Motion3Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,6 +39,8 @@
             android:name=".activity.MiniPaintActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".activity.AnimationActivity" />
+        <activity android:name=".activity.MotionActivity" />
+        <activity android:name=".activity.Motion2Activity" />
 
         <meta-data
             android:name="preloaded_fonts"
