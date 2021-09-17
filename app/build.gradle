@@ -5,16 +5,16 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'androidx.navigation.safeargs'
-
+apply plugin: 'com.huawei.agconnect'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolVersion
 
     defaultConfig {
         applicationId "com.example.xlwapp"
-        minSdkVersion 19
-        targetSdkVersion 29
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -131,6 +131,15 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics:17.5.0'
     implementation 'com.google.firebase:firebase-crashlytics:17.2.1'
     implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation 'com.firebaseui:firebase-ui-auth:6.0.2'
 
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+
+    //华为
+    implementation 'com.huawei.agconnect:agconnect-core:1.4.0.300'
+    implementation 'com.huawei.hms:push:5.0.0.300'
+    implementation 'com.huawei.hms:hianalytics:5.0.3.300'
+    implementation 'com.huawei.agconnect:agconnect-crash:1.4.1.300'
+    implementation 'com.huawei.hms:iap:5.0.2.300'
+
 }

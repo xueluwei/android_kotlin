@@ -19,4 +19,15 @@ that interval. They need to be in sync when anything added, removed or modified 
         <item>10</item>
         <item>12</item>
     </integer-array>
+
+    <string-array name="login_array">
+        <item>take off</item>
+        <item>boom</item>
+        <item>im a dog</item>
+        <item>666</item>
+        <item>im gay</item>
+        <item>whose your daddy</item>
+        <item>big brother</item>
+    </string-array>
+
 </resources>

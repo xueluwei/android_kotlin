@@ -206,4 +206,14 @@
     <string name="motion2">motion2</string>
     <string name="motion3">motion3</string>
     <string name="motion4">motion4</string>
+    <string name="huawei_push">huawei push</string>
+    <string name="google_map">google map</string>
+    <string name="test">test</string>
+    <string name="firebase_ui">firebase ui</string>
+    <string name="login">login</string>
+    <string name="setting">setting</string>
+    <string name="change_welcome_text">change welcome text</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="huawei_iap">huawei iap</string>
+    <string name="edit">edit</string>
 </resources>

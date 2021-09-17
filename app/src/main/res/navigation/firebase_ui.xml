@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/firebase_ui"
+    app:startDestination="@id/firebaseLoginFragment">
+    <fragment
+        android:id="@+id/firebaseLoginFragment"
+        android:name="com.example.xlwapp.fragment.firebaseUI.FirebaseLoginFragment"
+        android:label="firebase_login_fragment"
+        tools:layout="@layout/firebase_login_fragment" >
+        <action
+            android:id="@+id/action_firebaseLoginFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <argument
+            android:name="changedText"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.xlwapp.fragment.firebaseUI.SettingFragment"
+        android:label="setting_fragment"
+        tools:layout="@layout/setting_fragment" >
+        <action
+            android:id="@+id/action_settingFragment_to_firebaseLoginFragment"
+            app:destination="@id/firebaseLoginFragment"
+            app:popUpTo="@id/firebase_ui" />
+    </fragment>
+</navigation>

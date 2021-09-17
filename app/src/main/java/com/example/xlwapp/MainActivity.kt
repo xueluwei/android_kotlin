@@ -29,6 +29,11 @@ class MainActivity : AppCompatActivity() {
         button11.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, CustomViewActivity::class.java)) })
         button12.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, AnimationActivity::class.java)) })
         button13.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, MotionActivity::class.java)) })
+        button14.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, GoogleMapActivity::class.java)) })
+//        button15.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, TasksActivity::class.java)) })
+        button16.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, FirebaseUIActivity::class.java)) })
+        button17.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, HuaweiPushActivity::class.java)) })
+        button18.setOnClickListener(View.OnClickListener { this.startActivity(Intent(this, HuaweiIapActivity::class.java)) })
     }
 
     private fun setDarkMode() {
